@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>General&amp;path=About</string>
+	<string>General&amp;path=ACCESSIBILITY</string>
+	<string>General&amp;path=USAGE/CELLULAR_USAGE</string>
+	<string>Bluetooth</string>
+	<string>General&amp;path=DATE_AND_TIME</string>
+	<string>FACETIME</string>
+	<string>General</string>
+	<string>General&amp;path=Keyboard</string>
+	<string>CASTLE</string>
+	<string>CASTLE&amp;path=STORAGE_AND_BACKUP</string>
+	<string>General&amp;path=INTERNATIONAL</string>
+	<string>Privacy&amp;path=LOCATION&amp;ID=com.coalaa.itexashk</string>
+	<string>ACCOUNT_SETTINGS</string>
+	<string>MUSIC</string>
+	<string>NOTES</string>
+	<string>NOTIFICATIONS_ID</string>
+	<string>Phone</string>
+	<string>Photos</string>
+	<string>General&amp;path=ManagedConfigurationList</string>
+	<string>General&amp;path=Reset</string>
+	<string>Sounds&amp;path=Ringtone</string>
+	<string>SAFARI</string>
+	<string>SIRI</string>
+	<string>Sounds</string>
+	<string>General&amp;path=SOFTWARE_UPDATE_LINK</string>
+	<string>STORE</string>
+	<string>TWITTER</string>
+	<string>FACEBOOK</string>
+	<string>General&amp;path=USAGE</string>
+	<string>VIDEO</string>
+	<string>General&amp;path=VPN</string>
+	<string>Wallpaper</string>
+	<string>WIFI</string>
+	<string>NTERNET_TETHERING</string>
+	<string>MOBILE_DATA_SETTINGS_ID</string>
+	<string>Settings</string>
+	<string>Carrier</string>
+	<string>Privacy</string>
+	<string>MUSIC&amp;path=com.apple.Music:EQ</string>
+</array>
+</plist>
