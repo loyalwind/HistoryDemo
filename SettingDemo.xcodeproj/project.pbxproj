@@ -177,7 +177,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = boyaa;
+				ORGANIZATIONNAME = loyalwind;
 				TargetAttributes = {
 					A07AC36F1F550268005916A0 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -354,7 +354,7 @@
 				INFOPLIST_FILE = SettingDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boyaa.ToolsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loyalwind.ToolsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -367,7 +367,7 @@
 				INFOPLIST_FILE = SettingDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boyaa.ToolsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loyalwind.ToolsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

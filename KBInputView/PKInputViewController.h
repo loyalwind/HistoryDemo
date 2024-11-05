@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PKNativeServeWindowViewControllerDelegate.h"
+#import "PKNativeUIDelegate.h"
+@class PKInputViewController;
 
-@interface PKInputViewController : UIViewController<PKNativeServeWindowViewControllerDelegate>
-@property (weak, nonatomic, readonly) UITextView *textView;
-@property (weak, nonatomic, readonly) UIButton *doneButton;
+@protocol PKInputViewControllerDelegate <NSObject>
+@optional
+- (void)inputViewController:(PKInputViewController *)viewController inputedText:(NSString *)text;
+- (void)inputViewController:(PKInputViewController *)viewController inputingText:(NSString *)text;
+- (void)inputViewControllerGiveupInput:(PKInputViewController *)viewController;
+@end
+
+
+@interface PKInputViewController : UIViewController<PKNativeUIDelegate>
+@property (weak, nonatomic) id<PKInputViewControllerDelegate> delegate;
 - (void)setSendBtnText:(NSString *)text;
+- (void)beginInput;
 @end

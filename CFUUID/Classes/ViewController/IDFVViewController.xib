@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDFVViewController">
+            <connections>
+                <outlet property="genidfvLabel" destination="mzk-K6-54x" id="Ari-Om-KPy"/>
+                <outlet property="idfvLabe" destination="mMn-p8-kbN" id="28l-vO-tUR"/>
+                <outlet property="view" destination="ZTm-r4-LqI" id="M7d-3d-hwa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZTm-r4-LqI">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="idfv" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMn-p8-kbN" userLabel="idfv">
+                    <rect key="frame" x="15" y="120" width="345" height="60"/>
+                    <color key="backgroundColor" red="0.63921568630000003" green="0.28627450980000002" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="q4X-jw-lNP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生成的idfv" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzk-K6-54x" userLabel="生成的idfv">
+                    <rect key="frame" x="15" y="210" width="345" height="60"/>
+                    <color key="backgroundColor" red="0.0" green="0.64408482140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="8zR-v8-B8J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPZ-zp-fWR" userLabel="生成idfv">
+                    <rect key="frame" x="159" y="335" width="57" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="kQG-at-Jbi"/>
+                    </constraints>
+                    <state key="normal" title="生成idfv"/>
+                    <connections>
+                        <action selector="genIDFVAction" destination="-1" eventType="touchUpInside" id="bqp-cQ-w8b"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XPZ-zp-fWR" firstAttribute="top" secondItem="mzk-K6-54x" secondAttribute="bottom" constant="65" id="61g-pB-HZg"/>
+                <constraint firstItem="mMn-p8-kbN" firstAttribute="centerX" secondItem="ZTm-r4-LqI" secondAttribute="centerX" id="N7L-TS-5vO"/>
+                <constraint firstItem="mzk-K6-54x" firstAttribute="leading" secondItem="bgr-5f-lKt" secondAttribute="leading" constant="15" id="QwR-7K-MUc"/>
+                <constraint firstItem="mzk-K6-54x" firstAttribute="top" secondItem="mMn-p8-kbN" secondAttribute="bottom" constant="30" id="VvA-1A-Lbi"/>
+                <constraint firstItem="XPZ-zp-fWR" firstAttribute="centerX" secondItem="ZTm-r4-LqI" secondAttribute="centerX" id="agJ-7n-hcX"/>
+                <constraint firstItem="mMn-p8-kbN" firstAttribute="top" secondItem="bgr-5f-lKt" secondAttribute="top" constant="100" id="gYn-CQ-s6W"/>
+                <constraint firstItem="mMn-p8-kbN" firstAttribute="leading" secondItem="bgr-5f-lKt" secondAttribute="leading" constant="15" id="gy9-Vq-ehz"/>
+                <constraint firstItem="bgr-5f-lKt" firstAttribute="trailing" secondItem="mMn-p8-kbN" secondAttribute="trailing" constant="15" id="j0r-fq-jFD"/>
+                <constraint firstItem="bgr-5f-lKt" firstAttribute="trailing" secondItem="mzk-K6-54x" secondAttribute="trailing" constant="15" id="jH0-9F-SG9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="bgr-5f-lKt"/>
+        </view>
+    </objects>
+</document>

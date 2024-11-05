@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A046577D2048F37300E76882 /* PKInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A046577C2048F37300E76882 /* PKInputViewController.xib */; };
-		A04657802048F3AB00E76882 /* PKInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A046577F2048F3AB00E76882 /* PKInputViewController.m */; };
+		A04657802048F3AB00E76882 /* PKInputViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A046577F2048F3AB00E76882 /* PKInputViewController.mm */; };
 		A098F7DA2047B93F00087D5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A098F7D92047B93F00087D5C /* AppDelegate.m */; };
 		A098F7DD2047B93F00087D5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A098F7DC2047B93F00087D5C /* ViewController.m */; };
 		A098F7E02047B93F00087D5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A098F7DE2047B93F00087D5C /* Main.storyboard */; };
@@ -17,13 +17,17 @@
 		A098F7E82047B93F00087D5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A098F7E72047B93F00087D5C /* main.m */; };
 		A09A780D205240D3002F063E /* PKNativeServeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A09A780C205240D3002F063E /* PKNativeServeWindow.m */; };
 		A09A7810205242B0002F063E /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09A780F205242B0002F063E /* NewViewController.m */; };
-		A09A782020526FC0002F063E /* PKNativeServeWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A09A781F20526FC0002F063E /* PKNativeServeWindowManager.m */; };
+		A09A782020526FC0002F063E /* PKNativeUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A09A781F20526FC0002F063E /* PKNativeUIManager.m */; };
+		A09EC64C2062688F004D5264 /* btnBackImg.png in Resources */ = {isa = PBXBuildFile; fileRef = A09EC6482062688F004D5264 /* btnBackImg.png */; };
+		A09EC64D2062688F004D5264 /* btnSendBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A09EC6492062688F004D5264 /* btnSendBack.png */; };
+		A09EC64E2062688F004D5264 /* inPutViewBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A09EC64A2062688F004D5264 /* inPutViewBack.png */; };
+		A09EC64F2062688F004D5264 /* setting_close.png in Resources */ = {isa = PBXBuildFile; fileRef = A09EC64B2062688F004D5264 /* setting_close.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A046577C2048F37300E76882 /* PKInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKInputViewController.xib; sourceTree = "<group>"; };
 		A046577E2048F3AB00E76882 /* PKInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKInputViewController.h; sourceTree = "<group>"; };
-		A046577F2048F3AB00E76882 /* PKInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKInputViewController.m; sourceTree = "<group>"; };
+		A046577F2048F3AB00E76882 /* PKInputViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PKInputViewController.mm; sourceTree = "<group>"; };
 		A098F7D52047B93F00087D5C /* KBInputView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBInputView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A098F7D82047B93F00087D5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A098F7D92047B93F00087D5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,9 +42,13 @@
 		A09A780C205240D3002F063E /* PKNativeServeWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKNativeServeWindow.m; sourceTree = "<group>"; };
 		A09A780E205242B0002F063E /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
 		A09A780F205242B0002F063E /* NewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
-		A09A781E20526FC0002F063E /* PKNativeServeWindowManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKNativeServeWindowManager.h; sourceTree = "<group>"; };
-		A09A781F20526FC0002F063E /* PKNativeServeWindowManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKNativeServeWindowManager.m; sourceTree = "<group>"; };
-		A09CCF1F20562D55002C6510 /* PKNativeServeWindowViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKNativeServeWindowViewControllerDelegate.h; sourceTree = "<group>"; };
+		A09A781E20526FC0002F063E /* PKNativeUIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKNativeUIManager.h; sourceTree = "<group>"; };
+		A09A781F20526FC0002F063E /* PKNativeUIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKNativeUIManager.m; sourceTree = "<group>"; };
+		A09CCF1F20562D55002C6510 /* PKNativeUIDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKNativeUIDelegate.h; sourceTree = "<group>"; };
+		A09EC6482062688F004D5264 /* btnBackImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnBackImg.png; sourceTree = "<group>"; };
+		A09EC6492062688F004D5264 /* btnSendBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnSendBack.png; sourceTree = "<group>"; };
+		A09EC64A2062688F004D5264 /* inPutViewBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inPutViewBack.png; sourceTree = "<group>"; };
+		A09EC64B2062688F004D5264 /* setting_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_close.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,19 +89,31 @@
 				A09A780F205242B0002F063E /* NewViewController.m */,
 				A09A780B205240D3002F063E /* PKNativeServeWindow.h */,
 				A09A780C205240D3002F063E /* PKNativeServeWindow.m */,
-				A09CCF1F20562D55002C6510 /* PKNativeServeWindowViewControllerDelegate.h */,
-				A09A781E20526FC0002F063E /* PKNativeServeWindowManager.h */,
-				A09A781F20526FC0002F063E /* PKNativeServeWindowManager.m */,
+				A09CCF1F20562D55002C6510 /* PKNativeUIDelegate.h */,
+				A09A781E20526FC0002F063E /* PKNativeUIManager.h */,
+				A09A781F20526FC0002F063E /* PKNativeUIManager.m */,
 				A098F7DE2047B93F00087D5C /* Main.storyboard */,
 				A046577C2048F37300E76882 /* PKInputViewController.xib */,
 				A046577E2048F3AB00E76882 /* PKInputViewController.h */,
-				A046577F2048F3AB00E76882 /* PKInputViewController.m */,
+				A046577F2048F3AB00E76882 /* PKInputViewController.mm */,
 				A098F7E12047B93F00087D5C /* Assets.xcassets */,
 				A098F7E32047B93F00087D5C /* LaunchScreen.storyboard */,
 				A098F7E62047B93F00087D5C /* Info.plist */,
 				A098F7E72047B93F00087D5C /* main.m */,
+				A09EC6472062680B004D5264 /* Resource */,
 			);
 			path = KBInputView;
+			sourceTree = "<group>";
+		};
+		A09EC6472062680B004D5264 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A09EC6482062688F004D5264 /* btnBackImg.png */,
+				A09EC6492062688F004D5264 /* btnSendBack.png */,
+				A09EC64A2062688F004D5264 /* inPutViewBack.png */,
+				A09EC64B2062688F004D5264 /* setting_close.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +143,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = boyaa;
+				ORGANIZATIONNAME = loyalwind;
 				TargetAttributes = {
 					A098F7D42047B93F00087D5C = {
 						CreatedOnToolsVersion = 9.2;
@@ -158,6 +178,10 @@
 				A098F7E52047B93F00087D5C /* LaunchScreen.storyboard in Resources */,
 				A098F7E22047B93F00087D5C /* Assets.xcassets in Resources */,
 				A098F7E02047B93F00087D5C /* Main.storyboard in Resources */,
+				A09EC64C2062688F004D5264 /* btnBackImg.png in Resources */,
+				A09EC64D2062688F004D5264 /* btnSendBack.png in Resources */,
+				A09EC64E2062688F004D5264 /* inPutViewBack.png in Resources */,
+				A09EC64F2062688F004D5264 /* setting_close.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,10 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A04657802048F3AB00E76882 /* PKInputViewController.m in Sources */,
+				A04657802048F3AB00E76882 /* PKInputViewController.mm in Sources */,
 				A098F7DD2047B93F00087D5C /* ViewController.m in Sources */,
 				A098F7E82047B93F00087D5C /* main.m in Sources */,
-				A09A782020526FC0002F063E /* PKNativeServeWindowManager.m in Sources */,
+				A09A782020526FC0002F063E /* PKNativeUIManager.m in Sources */,
 				A09A7810205242B0002F063E /* NewViewController.m in Sources */,
 				A09A780D205240D3002F063E /* PKNativeServeWindow.m in Sources */,
 				A098F7DA2047B93F00087D5C /* AppDelegate.m in Sources */,
@@ -311,9 +335,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJA4BUEX79;
 				INFOPLIST_FILE = KBInputView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boyaa.KBInputView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loyalwind.KBInputView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,9 +350,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJA4BUEX79;
 				INFOPLIST_FILE = KBInputView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boyaa.KBInputView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loyalwind.KBInputView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

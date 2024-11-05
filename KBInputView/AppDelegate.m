@@ -18,19 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    NSArray *updatepath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSLog(@"---\n%@",paths);
-    
-    NSFileManager *mgr = [NSFileManager defaultManager];
-    NSDirectoryEnumerator *emu = [mgr enumeratorAtPath:paths.firstObject];
-    NSMutableArray *arr = [NSMutableArray array];
-    for (NSString *path in emu) {
-        NSString *fullpath = [paths.firstObject stringByAppendingPathComponent:path];
-        [arr addObject:fullpath];
-    }
-    NSLog(@"%@",arr);
-    NSLog(@"%@",[mgr subpathsAtPath:paths.firstObject]);
     
     return YES;
 }

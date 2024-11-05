@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PKNativeServeWindowViewControllerDelegate.h"
+#import "PKNativeUIDelegate.h"
 
 @interface PKNativeServeWindow : UIWindow
 

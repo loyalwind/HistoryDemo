@@ -89,7 +89,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = boyaa;
+				ORGANIZATIONNAME = loyalwind;
 				TargetAttributes = {
 					A06FB3AF202026E900B9AD33 = {
 						CreatedOnToolsVersion = 9.2;

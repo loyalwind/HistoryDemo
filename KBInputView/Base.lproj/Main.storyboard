@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wif-r9-EAp">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wif-r9-EAp">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,12 +11,16 @@
         <scene sceneID="IpS-PU-uOK">
             <objects>
                 <viewController id="wif-r9-EAp" customClass="NewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ddn-Wr-KI9"/>
+                        <viewControllerLayoutGuide type="bottom" id="bom-xC-eZN"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ao0-98-TwA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMJ-6F-Clm">
-                                <rect key="frame" x="156" y="26" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMJ-6F-Clm">
+                                <rect key="frame" x="156.5" y="26" width="62" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Hpe-8B-ksg"/>
                                 </constraints>
@@ -28,29 +29,58 @@
                                     <action selector="callKeyBoard:" destination="wif-r9-EAp" eventType="touchUpInside" id="Lq5-pr-tQy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frn-j8-81E">
+                                <rect key="frame" x="24" y="26" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="hdA-Qm-cJQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="kJI-2C-c8e"/>
+                                </constraints>
+                                <state key="normal" image="setting_close"/>
+                                <connections>
+                                    <action selector="close:" destination="wif-r9-EAp" eventType="touchUpInside" id="NPG-DY-hhp"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="32434" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cVf-nH-E3Y">
+                                <rect key="frame" x="33" y="118" width="157" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y6f-xS-v3w">
+                                <rect key="frame" x="139" y="118" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="frn-j8-81E" firstAttribute="leading" secondItem="ao0-98-TwA" secondAttribute="leadingMargin" constant="8" id="IpA-rk-G4f"/>
                             <constraint firstItem="HMJ-6F-Clm" firstAttribute="centerX" secondItem="ao0-98-TwA" secondAttribute="centerX" id="XSS-Ig-KVr"/>
-                            <constraint firstItem="HMJ-6F-Clm" firstAttribute="top" secondItem="djm-o4-5Kv" secondAttribute="top" constant="6" id="lc5-Rh-Vgx"/>
+                            <constraint firstItem="frn-j8-81E" firstAttribute="top" secondItem="ddn-Wr-KI9" secondAttribute="bottom" constant="6" id="i4g-tu-Nmi"/>
+                            <constraint firstItem="HMJ-6F-Clm" firstAttribute="top" secondItem="ddn-Wr-KI9" secondAttribute="bottom" constant="6" id="lc5-Rh-Vgx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="djm-o4-5Kv"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScI-TP-l1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-782" y="113"/>
+            <point key="canvasLocation" x="-783.20000000000005" y="112.89355322338831"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RRb-mu-xtk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vOk-AB-nwB"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2S-XM-wJh">
-                                <rect key="frame" x="156" y="12" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2S-XM-wJh">
+                                <rect key="frame" x="156.5" y="12" width="62" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NaM-os-qwZ"/>
                                 </constraints>
@@ -65,7 +95,6 @@
                             <constraint firstItem="C2S-XM-wJh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Opf-uk-thj"/>
                             <constraint firstItem="C2S-XM-wJh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="12" id="RYw-tw-keG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -73,4 +102,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="setting_close" width="36" height="40"/>
+    </resources>
 </document>

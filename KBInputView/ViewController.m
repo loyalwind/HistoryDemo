@@ -43,8 +43,8 @@
 {
     self.inputVc.view.hidden = NO;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.02 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        BOOL ret = [self.inputVc.textView becomeFirstResponder];
-        NSLog(@"%d",ret);
+//        BOOL ret = [self.inputVc.textView becomeFirstResponder];
+//        NSLog(@"%d",ret);
     });
 }
 

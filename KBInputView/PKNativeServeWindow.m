@@ -7,7 +7,7 @@
 //
 
 #import "PKNativeServeWindow.h"
-#import "PKNativeServeWindowViewControllerDelegate.h"
+#import "PKNativeUIDelegate.h"
 
 @implementation PKNativeServeWindow
 - (instancetype)initWithFrame:(CGRect)frame
@@ -20,7 +20,7 @@
     return self;
 }
 
-- (void)showViewController:(UIViewController <PKNativeServeWindowViewControllerDelegate>*)vc animated:(BOOL)animated completion:(void (^)(void))completion
+- (void)showViewController:(UIViewController <PKNativeUIDelegate>*)vc animated:(BOOL)animated completion:(void (^)(void))completion
 {
     if (!vc)return;
     self.hidden = NO;
